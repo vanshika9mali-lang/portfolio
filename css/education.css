@@ -1,0 +1,191 @@
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8e44ad;
+}
+
+.education {
+    min-height: calc(100vh - 75px);
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 30px;
+}
+
+.education-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.education-heading h1 {
+    font-size: 42px;
+    margin: 10px 0 15px;
+}
+
+.education-heading h1 span {
+    color: #8e44ad;
+}
+
+.education-heading > p:last-child {
+    color: #666;
+    font-size: 17px;
+}
+
+
+
+
+
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #8e44ad;
+}
+
+
+
+
+
+
+.timeline-item {
+    position: relative;
+    padding-left: 65px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.timeline-dot {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+
+    width: 23px;
+    height: 23px;
+
+    background: #8e44ad;
+    border: 5px solid white;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 3px #8e44ad;
+}
+
+
+
+
+
+.education-card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #8e44ad;
+
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.education-year {
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    background: #f3e5f5;
+    color: #8e44ad;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.education-card h2 {
+    margin: 15px 0 8px;
+    font-size: 23px;
+}
+
+.education-card h3 {
+    color: #8e44ad;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .education {
+        padding: 50px 20px;
+    }
+
+    .education-heading h1 {
+        font-size: 34px;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-item {
+        padding-left: 45px;
+    }
+
+    .timeline-dot {
+        left: 5px;
+    }
+
+    .education-card {
+        padding: 20px;
+    }
+}
